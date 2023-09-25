@@ -2,6 +2,8 @@
 Documentation   Arquivo base
 
 Library     AppiumLibrary
+Library     libs/mongo.py
+
 Resource    screens/login.resource
 Resource    screens/tasks.resource
 

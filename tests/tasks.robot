@@ -9,9 +9,9 @@ Test Teardown     Finaliza sessão
 *** Test Cases ***
 Deve poder cadastrar uma nova tarefa
 
-    Realiza login
-    
     ${task}    Set Variable    Estudar Xpath
+    Remove tarefa DB         ${task}
 
+    Realiza login
     Cadastra tarefa          ${task}
     Deve existir a tarefa    ${task}
