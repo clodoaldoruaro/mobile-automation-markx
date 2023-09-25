@@ -10,4 +10,8 @@ Test Teardown     Finaliza sessão
 Deve poder cadastrar uma nova tarefa
 
     Realiza login
-    Cadastra tarefa    Estudar automação de testes
+    
+    ${task}    Set Variable    Estudar Xpath
+
+    Cadastra tarefa          ${task}
+    Deve existir a tarefa    ${task}

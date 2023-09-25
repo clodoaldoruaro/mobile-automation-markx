@@ -15,3 +15,10 @@ Cadastra tarefa
 
     Input Text        ${input_new_task}        ${task_name}
     Click Element     ${button_create}
+
+Deve existir a tarefa
+    [Arguments]        ${task_name}
+
+    Wait Until Element Is Visible    xpath=//*[@resource-id="taskText"][@text="${task_name}"]    5
+
+
