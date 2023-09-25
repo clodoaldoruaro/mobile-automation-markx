@@ -11,4 +11,3 @@ Deve poder cadastrar uma nova tarefa
 
     Realiza login
     Cadastra tarefa    Estudar automação de testes
-    
