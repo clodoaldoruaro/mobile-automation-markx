@@ -41,5 +41,5 @@ Deve poder concluir uma tarefa
     Cadastra tarefa          ${task}
     Deve existir a tarefa    ${task}
 
-    Concluir a tareva                    ${task}
+    Concluir a tarefa                    ${task}
     Tarefa deve estar concluida          ${task}

@@ -31,7 +31,7 @@ Remove a tareva
     Wait Until Element Is Visible     ${button}     5
     Click Element    ${button}
 
-Concluir a tareva
+Concluir a tarefa
     [Arguments]    ${task_name}
 
     Click Element    xpath=//*[@text="${task_name}"]/..
