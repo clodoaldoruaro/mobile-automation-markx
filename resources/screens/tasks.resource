@@ -30,3 +30,13 @@ Remove a tareva
 
     Wait Until Element Is Visible     ${button}     5
     Click Element    ${button}
+
+Concluir a tareva
+    [Arguments]    ${task_name}
+
+    Click Element    xpath=//*[@text="${task_name}"]/..
+
+Tarefa deve estar concluida
+    [Arguments]    ${task_name}
+    
+    Wait Until Element Is Visible     xpath=//*[@text="${task_name}"]/..//android.widget.ImageView     5

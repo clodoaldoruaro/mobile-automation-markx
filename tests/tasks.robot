@@ -29,3 +29,17 @@ Deve poder remover uma tarefa
 
     Remove a tareva                      ${task}
     Wait Until Page Does Not Contain     ${task}
+    
+Deve poder concluir uma tarefa
+    [Tags]    concluir
+        
+    ${task}    Set Variable    Comprar ferramentas
+    Remove tarefa DB         ${task}
+    
+    Realiza login
+    
+    Cadastra tarefa          ${task}
+    Deve existir a tarefa    ${task}
+
+    Concluir a tareva                    ${task}
+    Tarefa deve estar concluida          ${task}
