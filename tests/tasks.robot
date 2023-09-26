@@ -15,3 +15,17 @@ Deve poder cadastrar uma nova tarefa
     Realiza login
     Cadastra tarefa          ${task}
     Deve existir a tarefa    ${task}
+
+Deve poder remover uma tarefa
+    [Tags]    remove
+        
+    ${task}    Set Variable    Comprar refrigerante
+    Remove tarefa DB         ${task}
+    
+    Realiza login
+    
+    Cadastra tarefa          ${task}
+    Deve existir a tarefa    ${task}
+
+    Remove a tareva                      ${task}
+    Wait Until Page Does Not Contain     ${task}
