@@ -2,7 +2,7 @@ from robot.api.deco import keyword
 from pymongo import MongoClient
 import os
 
-client = MongoClient(os.environ['CONNECT_MONGODB_MOBILE'])
+client = MongoClient(os.environ.get('CONNECT_MONGODB_MOBILE'))
 
 db = client['MarkX']
 

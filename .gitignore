@@ -1,1 +1,3 @@
 logs
+*.env
+mongo.cpython-311.pyc
