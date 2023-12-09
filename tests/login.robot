@@ -10,6 +10,3 @@ Test Teardown     Finaliza sessão
 Deve logar com sucesso
 
     Realiza login
-    
-
-    

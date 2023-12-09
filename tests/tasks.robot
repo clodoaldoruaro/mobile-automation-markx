@@ -1,7 +1,7 @@
 *** Settings ***
-Documentation        Suite que realiza cadastro de tarefas
+Documentation    Suite que realiza gestão de tarefas
 
-Resource    ../resources/base.resource
+Resource        ../resources/base.resource
 
 Test Setup        Inicia sessão
 Test Teardown     Finaliza sessão
