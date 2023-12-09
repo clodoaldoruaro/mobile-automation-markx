@@ -1,5 +1,5 @@
 <h1 align="center">
-  :robot: Automação de testes mobile :robot:
+  Automação de testes mobile
 </h1>
 
 App MarkX, permite o usuário ter seu login para gerenciar sua lista de tarefas ou de compras.
